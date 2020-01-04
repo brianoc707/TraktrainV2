@@ -1,0 +1,35 @@
+﻿<h1>Welcome </h1>
+
+<h3>Post a Track for Sale</h3>
+
+@model Beat
+ <form action ="/post" method="post">
+        <div class= "form-group">
+        <span asp-validation-for="Name" class="text-danger"></span>
+        <label  asp-for="Name"></label>
+        <input class = "form-control" asp-for="Name">
+        </div>
+         <div class= "form-group">
+        <span asp-validation-for="Genre" class="text-danger"></span>
+        <label  asp-for="Genre"></label>
+        <input class = "form-control" asp-for="Genre">
+        </div>
+        <div class="form-group">
+        <span asp-validation-for="BPM" class="text-danger"></span>
+        <label asp-for="BPM"></label>
+        <input type="number" class = "form-control" asp-for="BPM">
+        </div>
+        
+        <div class="form-group">
+        <span asp-validation-for="Price" class="text-danger"></span>
+        <label asp-for="Price"></label>
+        <input type ="number" class = "form-control" asp-for="Price">
+        </div>
+        
+
+        
+        
+        <input type="submit" value="Create">
+        
+      
+    </form>

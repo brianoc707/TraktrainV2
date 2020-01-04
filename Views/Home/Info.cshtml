@@ -1,0 +1,31 @@
+
+    <h1>@ViewBag.LoggedIn.Name 's Beats</h1>
+    
+    @{
+    <table class="table table-striped">
+    <tr>
+        <th>Name</th>
+        <th>BPM</th>
+        <th>Price</th>
+        <th>Genre</th>
+
+        <th>Action</th>
+    </tr>
+    
+    @foreach(var i in ViewBag.UserBeats)
+    {
+    
+    <tr>
+    
+        <td>@i.Name</td>
+        <td>@i.BPM</td>
+        <td>@i.Genre</td>
+        <td>@i.Price</td>
+        <td>BUY</td>
+
+    </tr>
+    }
+
+    </table>
+    }
+
